@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verse Muse</title>
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
   </head>
   <body>
     <div class="container">
@@ -12,7 +13,7 @@
         <h1>Welcome to Verse Muse</h1>
       </header>
       <main>
-        <form>
+        <form id="poem-generator">
           <input
             type="text"
             placeholder="type your muse..."
@@ -23,11 +24,7 @@
           />
           <input type="submit" class="button" />
         </form>
-        <div class="poem">
-          A quiet moon watches the ocean breathe
-          <br />
-          Lost in the echo of forgotten dreams
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
@@ -46,5 +43,6 @@
         >.
       </footer>
     </div>
+    <script src="src/app.js"></script>
   </body>
 </html>
