@@ -10,7 +10,7 @@ body {
 
 header {
   background: #fff;
-  padding: 24px;
+  padding: 24px 42px;
   text-align: center;
 }
 
@@ -67,7 +67,6 @@ form {
 
 .poem {
   font-style: italic;
-  text-align: center;
   line-height: 2;
   font-size: 18px;
   color: #5c5046;
@@ -79,7 +78,9 @@ form {
   width: 80%;
   max-width: 600px;
 }
-
+.poem strong {
+  color: #7a5c4f;
+}
 footer {
   padding: 14px;
   font-size: 10px;
