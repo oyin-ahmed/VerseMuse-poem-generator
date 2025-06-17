@@ -1,0 +1,96 @@
+body {
+  font-family: "Georgia", serif;
+  background: #f8f6f3;
+  color: #2c2c2c;
+}
+.container {
+  margin: 100px auto;
+  max-width: 600px;
+}
+
+header {
+  background: #fff;
+  padding: 24px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+  line-height: 1.5;
+  color: #4a3c31;
+}
+
+main {
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  padding: 30px;
+  margin-bottom: 25px;
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+}
+
+.prompt {
+  padding: 14px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  width: 60%;
+  transition: bordercolor 150ms;
+}
+
+.prompt:focus {
+  border-color: #7a5c4f;
+  outline: none;
+}
+
+.button {
+  margin-left: 10px;
+  padding: 14px 24px;
+  font-size: 16px;
+  background: #7a5c4f;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: ease-in-out 250ms;
+}
+.button:hover {
+  background: #5d453b;
+}
+
+.poem {
+  font-style: italic;
+  text-align: center;
+  line-height: 2;
+  font-size: 18px;
+  color: #5c5046;
+  border-left: #5d453b 3px solid;
+  padding: 15px;
+  box-shadow: 0px 4px 30px 0px rgb(93, 69, 59, 0.35);
+  justify-content: center;
+  margin-left: 0;
+}
+
+footer {
+  padding: 14px;
+  font-size: 10px;
+  color: #444;
+  border-top: 1px solid #ddd;
+  text-align: center;
+}
+
+footer a {
+  color: #7a5c4f;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
