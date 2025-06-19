@@ -28,12 +28,20 @@ main {
 }
 
 form {
+  display: flex;
+}
+.form-container {
   padding: 30px;
   margin-bottom: 25px;
   justify-content: center;
-  display: flex;
   width: 100%;
   max-width: 600px;
+}
+.hint {
+  line-height: 1.5;
+  font-size: 12px;
+  margin-top: 10px;
+  opacity: 0.7;
 }
 
 .prompt {
@@ -75,11 +83,14 @@ form {
   box-shadow: 0px 4px 30px 0px rgb(93, 69, 59, 0.35);
   justify-content: center;
   margin-left: 0;
-  width: 80%;
+  width: 95%;
   max-width: 600px;
 }
 .poem strong {
   color: #7a5c4f;
+}
+.hidden {
+  display: none;
 }
 footer {
   padding: 14px;
@@ -96,4 +107,17 @@ footer a {
 
 footer a:hover {
   text-decoration: underline;
+}
+.spinning {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

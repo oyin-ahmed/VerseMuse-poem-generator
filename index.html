@@ -14,19 +14,22 @@
         <h1>Verse Muse | Inspired by Your Imagination</h1>
       </header>
       <main>
-        <form id="poem-generator">
-          <input
-            type="text"
-            placeholder="type your muse..."
-            autofocus
-            required
-            autocomplete="off"
-            class="prompt"
-            id="muse"
-          />
-          <input type="submit" class="button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator">
+            <input
+              type="text"
+              placeholder="enter your muse..."
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+              id="muse"
+            />
+            <input type="submit" class="button" />
+          </form>
+          <div class="hint">i.e.: Honey, Paris, lamp</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>

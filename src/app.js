@@ -7,7 +7,7 @@ function displayPoem(response) {
   });
 }
 
-function generatePoem(event, response) {
+function generatePoem(event) {
   event.preventDefault();
   let muse = document.querySelector("#muse");
   let apiKey = "603213a20od31054bbtafc903709b865";
@@ -16,6 +16,9 @@ function generatePoem(event, response) {
   let prompt = `User instructions: generate a poem inspired by ${muse.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemElement = document.querySelector("#poem");
+  poemElement.classList.remove("hidden");
+  poemElement.innerHTML = `<div class="spinning"> ↺ Spinning verses from your muse: ${muse.value}...</div>`;
   axios.get(apiUrl).then(displayPoem);
 }
 
